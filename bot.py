@@ -5,7 +5,7 @@ import requests
 TOKEN = "8259571397:AAFG8Dixr2SJSECV9aTorspOnMd1zTb8vFc"
 
 # 2. Groq AI kaliti
-GROQ_KEY = "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"
+GROQ_KEY = "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"
 
 bot = telebot.TeleBot(TOKEN)
 
