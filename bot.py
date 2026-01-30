@@ -2,7 +2,7 @@ import telebot
 import requests
 
 # 1. Telegram Bot kaliti
-TOKEN = "8259571397:AAHTv_Uv6RzDkPloE6p4vM8x9uX0wY" 
+TOKEN = "8259571397:AAFG8Dixr2SJSECV9aTorspOnMd1zTb8vFc" 
 
 # 2. Groq AI kaliti
 GROQ_KEY = "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" 
