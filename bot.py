@@ -2,10 +2,10 @@ import telebot
 import requests
 
 # 1. Telegram Bot kaliti
-TOKEN = "8259571397:AAFG8Dixr2SJSECV9aTorspOnMd1zTb8vFc" 
+TOKEN = "8259571397:AAFG8Dixr2SJSECV9aTorspOnMd1zTb8vFc"
 
 # 2. Groq AI kaliti
-GROQ_KEY = "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" 
+GROQ_KEY = "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"
 
 bot = telebot.TeleBot(TOKEN)
 
@@ -27,9 +27,10 @@ def chat_ai(message):
         if res.status_code == 200:
             bot.reply_to(message, res.json()['choices'][0]['message']['content'])
         else:
-            bot.reply_to(message, "Xatolik: Groq API javob bermadi.")
+            bot.reply_to(message, "Xatolik: Groq AI javob bermadi.")
     except Exception as e:
         bot.reply_to(message, "Ulanishda xatolik yuz berdi.")
 
 if __name__ == "__main__":
-    bot.infinity_polling()
+    bot.polling(none_stop=True)
+    
